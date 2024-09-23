@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HARISH Portfolio</title>
+  <title>HARISH_Karthick Portfolio</title>
+  <link rel="icon" href="./assets/HK-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./pages/main.css">
+  <!-- <link rel="stylesheet" href="./pages/respon.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
+<!-- <script src="./pages/script.js"></script> -->
 <body>
   <main>
     <section id="Home" class="container">
       <header>
-        <div class="navbar">
-          <nav class="navigation">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Skills">Skills</a>
-            <a href="#contacts">Contacts</a>
-          </nav>
+        <div class="nav">
+          <nav class="navbar">
+            <div class="logo"><img src="./assets/HK-logo2.png" height="40px" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="#Home" class="nav-link active">Home</a></li>
+                <li><a href="#About" class="nav-link">About</a></li>
+                <li><a href="#Skills" class="nav-link">Skills</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
         </div>
       </header>
     </section>
     <!---Home page------>
     <div class="maincontainer">
       <section class="img1">
-        <img src="./assets/IMG1.jpeg" width="300px" alt="">
+        <img src="./assets/Hero img.png" width="650px" height="800px" alt="">
       </section>
       <section class="Home">
         <div class="Home1">
@@ -37,10 +43,9 @@
               me!</a></button><br>
         </div>
         <div class="icon_home">
-          <i class="fa fa-github-square" style="font-size:48px;color:gray"><a
-              href="https://github.com/Harishkarthick-M"></a></i>
-          <i class="fa fa-linkedin-square" style="font-size:48px;color:gray"></i>
-          <i class="fa fa-envelope" style="font-size:48px;color:gray"></i>
+          <a href="https://github.com/Harishkarthick-M"><i class="fa fa-github-square" style="font-size:48px;color:#1d1d1d"></i></a>
+          <a href="https://github.com/Harishkarthick-M"><i class="fa fa-linkedin-square" style="font-size:48px;color:#1d1d1d"></i></a>
+          <a href="mailto:harish.maheswaran@fssa.freshworks.com"><i class="fa fa-envelope" style="font-size:48px;color:#1d1d1d"></i></a>
         </div>
       </section>
     </div>
@@ -49,13 +54,13 @@
     <section class="containerabout" id="About">
       <section class="aboutcontent">
         <h2>ABOUT ME</h2>
-        <p>This is Harish Karthick I am a diligent FULL STACK DEVELOPER with the skill of HTML , CSS , JS, PYTHON , C++
-          , MYsql . I am eager to join a tech company that builds out-of-the-box solutions for regional clients. and I
-          also skilled in developing plans, managing projects, and user documentation.</p>
-      </section>
+        <img src="./assets/hero2.jpg" alt="">
+        <p>Hello! I'm Harish Karthick, a passionate and driven Full Stack Developer with expertise in HTML, CSS, 
+          JavaScript, Python, C++, and MySQL. I’m excited to bring innovative and out-of-the-box solutions to companies that thrive on creativity and forward-thinking approaches.</p>
       <section class="about_explore">
         <span><a href="https://docs.google.com/document/d/1GVgj0XZgG9of_OA15np4EspTbps4SHWYEUT7HKbm38I/edit?usp=sharing" target="_blank">| EXPLORE |</a></span>
       </section>
+    </section>
     </section>
     <!------SKILL page------>
     <div class="skillpage">
@@ -66,16 +71,13 @@
             <div class="skills-grid">
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                    <p>HTML5</p>
+                    <p>HTML 5</p>
                 </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                    <p>CSS3</p>
+                    <p>CSS 3</p>
                 </div>
-                <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS">
-                    <p>SASS</p>
-                </div>
+               
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">  
                     <p>JavaScript</p>
@@ -99,9 +101,17 @@
                     <p>NodeJS</p>
                 </div>
                 <div class="skill-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS">
+                  <p>SASS</p>
+              </div>
+              <div class="skill-item">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                  <p>KOTLIN</p>
+              </div>  
+                  <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
                     <p>React</p>
-                </div>
+                  </div>
                 <div class="skill-item">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
                     <p>Figma</p>
@@ -116,7 +126,7 @@
             <h2>Other Skills:</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <img src="path/to/spanish-logo.png" alt="python">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
                     <p>Python</p>
                 </div>
                 <div class="skill-item">
@@ -135,35 +145,54 @@
         </div>
     </section>
     </div>
-    <!-- contacts page -->
-    <div id="contacts" class="container_con">
-      <h1>CONTACTS</h1>
-      <section class="cont">
-        <span><i class="fa fa-github-square"></i>
-          <h3>harishkarthick2020@gmail.com</h3>
-        </span>
-        <span><i class="fa fa-envelope"></i>
-          <h3>Harishkarthick-M</h3>
-        </span>
-        <span><i class="fa fa-twitter-square"></i>
-          <h3>harishkarthick_07</h3>
-        </span>
+    <!-- Projects page
+    <div id="projects">
+      <h2>projects</h2>
+      <section class="solulace">
+      <a href="">solulace</a>
       </section>
+    </div> -->
+    <!------------------------ contacts page ----------------------------->
+    <div id="contacts" class="container_container">
+      <h1>GET IN TOUCH</h1>
+      <div class="form_size">
       <section class="form">
-       <form action="">
-          <label for="fname">First name:</label>
-          <input type="text" placeholder="Enter Your Name*">
-          <br>
-          <label for="">Email:</label>
-          <input type="email" placeholder="Enter Your Email*">
-          <br>
-          <label for="phonenum">Phone number :</label>
-          <input type="text" placeholder="Enter Your Phone*">
-          <br>
-          <label for="msg"></label>
-          <textarea name="msg" placeholder="Your Message"></textarea>
-       </form>
+        <form id="contactForm" onsubmit="alert('Thank you!'); return false;">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Enter your name" required maxlength="25">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Enter your email" requiredmaxlength="20" >
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone number" maxlength="10">
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
       </section>
+      </div>
     </div>
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2024 Harish Karthick All Rights Reserved.</p>
+          <div class="social-icons">
+            <a href="https://github.com/Harishkarthick-M" target="_blank">
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </a>
+              <a href="https://instagram.com" target="_blank">
+                  <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
+              </a>
+              <a href="https://linkedin.com" target="_blank">
+                  <img src="https://cdn.simpleicons.org/linkedin/ffffff" alt="LinkedIn">
+              </a>
+              <a href="mailto:harishkarthick2020@gmail.com">
+                  <img src="https://cdn.simpleicons.org/gmail/ffffff" alt="Email">
+              </a>
+          </div>
+      </div>
+  </footer>
   </main>
 </body>
