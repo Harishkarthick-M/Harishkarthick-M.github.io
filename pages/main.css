@@ -65,19 +65,24 @@ body{
     margin-right: 25px;
 }
 
-
-.nav-links a:hover{
+.nav-link:hover {
     color: #888;
 }
 
+/* Active link gets the underline! */
+.nav-link.active {
+    border-bottom: 2px solid whitesmoke;
+}
+
 .navbar:hover {
-    background-color:#d6d6d6;
+    background-color: whitesmoke;
     color: black;
 }
 
-.navbar:hover .nav-links a {
+.navbar:hover .nav-link {
     color: black;
 }
+
 .maincontainer {
     height: 100vh;
     width: 100vw;
@@ -190,7 +195,7 @@ body{
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    margin:70px;
+    margin:75px;
     margin-top: 8%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -403,4 +408,11 @@ footer a {
 }
 footer a:hover {
     color: gray;
+}
+@media(max-width:768px){
+    .skillpage {
+        /* overflow-y: hidden; */
+        height: max-content;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
 }
