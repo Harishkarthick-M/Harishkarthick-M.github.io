@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, CSS,">
+  <meta name="description" content="Free Web tutorials for HTML and CSS">
   <title>HARISH_Karthick Portfolio</title>
   <link rel="icon" href="./assets/HK-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="./pages/main.css">
@@ -17,12 +19,12 @@
       <header>
         <div class="nav">
           <nav class="navbar">
-            <div class="logo"><img src="./assets/HK-logo2.png" height="40px" alt=""></div>
+            <div class="logo"><a href="./assets/HARISH RESUME 2024.pdf"><img src="./assets/HK-logo2.png" height="40px" alt=""></a></div>
             <ul class="nav-links">
                 <li><a href="#Home" class=" nav-link active">Home</a></li>
                 <li><a href="#About" class="nav-link">About</a></li>
                 <li><a href="#Skills" class="nav-link">Skills</a></li>
-                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
         </nav>
@@ -53,12 +55,12 @@
     <!-- About page -->
     <section class="containerabout" id="About">
       <section class="aboutcontent">
-        <h2>ABOUT ME</h2>
+        <h2>The Mind Behind the Code</h2>
         <img src="./assets/hero2.jpg" alt="">
-        <p>Hello! I'm Harish Karthick, a passionate and driven Full Stack Developer with expertise in HTML, CSS, 
-          JavaScript, Python, C++, and MySQL. I’m excited to bring innovative and out-of-the-box solutions to companies that thrive on creativity and forward-thinking approaches.</p>
+        <p>Hi, I'm Harish Karthick, a budding Full Stack Developer, always looking to improve my skills in HTML, CSS, JavaScript, Python, C++, and MySQL.
+           I enjoy building innovative solutions and love collaborating with companies that embrace creativity and fresh ideas.</p>
       <section class="about_explore">
-        <span><a href="https://docs.google.com/document/d/1GVgj0XZgG9of_OA15np4EspTbps4SHWYEUT7HKbm38I/edit?usp=sharing" target="_blank">| EXPLORE |</a></span>
+        <span><a href="./assets/HARISH RESUME 2024.pdf">| My Resume |</a></span>
       </section>
     </section>
     </section>
@@ -130,7 +132,7 @@
                     <p>Python</p>
                 </div>
                 <div class="skill-item">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C++">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
                     <p>C++</p>
                 </div>
                 <div class="skill-item">
@@ -145,30 +147,53 @@
         </div>
     </section>
     </div>
-    <!-- Projects page
+    <!----------Project-page------->
     <div id="projects">
-      <h2>projects</h2>
-      <section class="solulace">
-      <a href="">solulace</a>
-      </section>
-    </div> -->
+      <h2 id="head_pro">Projects</h2>
+      <section class="projects">
+        <div class="project" id="p1">
+            <a href="https://harishkarthick-m.github.io/SOULACE_PROJECT/"><h2>E-commerce Website For SOULACE</h2></a>
+            <p>This project is a E-commerce website built using HTML, CSS. This is made for ELS project.</p>
+        </div>
+
+        <div class="project" id="p2">
+            <a href="https://github.com/Harishkarthick-M/javascript-practice"><h2>Java Scprit</h2></a>
+            <p>This is JS based on my Practice</p>
+        </div>
+
+        <div class="project" id="p3">
+            <h2>Will be Update soon </h2>
+            <p>This contains a basic css layout</p>
+        </div>
+
+        <div class="project" id="p4">
+            <h2>Will be Update soon</h2>
+            <p>This contains a webpage using HTML</p>
+        </div>
+
+         <div class="project" id="p5">
+            <h2>Tourist</h2>
+            <p>This contains a webpage using HTML & CSS</p>
+        </div>
+    </section>
+    </div>
     <!------------------------ contacts page ----------------------------->
     <div id="contacts" class="container_container">
       <h1>GET IN TOUCH</h1>
       <div class="form_size">
       <section class="form">
-        <form id="contactForm" onsubmit="alert('Thank you!'); return false;">
+        <form id="contactForm" action="https://formspree.io/f/meojbnly" method="POST" >
             <div class="form-group">
-                <input type="text" id="name" placeholder="Enter your name" required maxlength="25">
+                <input name="name" type="text" id="name" placeholder="Enter your name" required maxlength="25">
             </div>
             <div class="form-group">
-                <input type="email" id="email" placeholder="Enter your email" requiredmaxlength="20" >
+                <input name="email" type="email" id="email" placeholder="Enter your email" requiredmaxlength="20" >
             </div>
             <div class="form-group">
-                <input type="tel" id="phone" placeholder="Phone number" maxlength="10">
+                <input name="phone"  type="tel" id="phone" placeholder="Phone number" maxlength="10">
             </div>
             <div class="form-group">
-                <textarea id="message" placeholder="Your message" required></textarea>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
             </div>
             <button type="submit" id="submit">Submit</button>
         </form>

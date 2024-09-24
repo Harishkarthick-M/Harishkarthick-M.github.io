@@ -75,7 +75,7 @@ body{
 }
 
 .navbar:hover {
-    background-color: whitesmoke;
+    background-color:#5f5d5d;
     color: black;
 }
 
@@ -171,10 +171,11 @@ body{
     display: inline-block;
     border: #1d1d1d solid 2px;
     margin: 2px;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 7%;
 }
 .aboutcontent img{
+    border: solid 10px #019ad8;
     border-radius: 50%;
     width: 300px;
     height: 250px;
@@ -186,6 +187,7 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .aboutcontent img:hover{
+    border: solid 10px lightblue;
     transform: scale(1.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -195,7 +197,7 @@ body{
     align-items: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: x-large;
-    margin:75px;
+    margin:85px;
     margin-top: 8%;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -267,6 +269,68 @@ body{
     margin-top: 10px;
     font-size: 14px;
 }
+/*Project*/
+#head_pro{
+    margin-left: 46%;
+    margin-top: 1%;
+    display: inline-block;
+    border: #1d1d1d solid 2px;
+}
+#projects{
+    background-color: #f4f4f4;
+}
+.projects {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+}
+#p1{
+    background-color: #71803b;
+}
+#p1 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+#p2{
+    background-color: #f0db4f;
+}
+#p2 a{
+    text-decoration: none;
+    color: black;
+}
+#p3{
+    background-color: rgb(228, 151, 8);
+}
+#p4{
+    background-color: lightblue;
+}
+#p5{
+    background: linear-gradient(to left,orange 1%,lightblue );
+}
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#p1 h2 p {
+    color: whitesmoke;
+}
+
+.project h2 p {
+    color: #1d1d1d;
+}
+/*--------*/
 /*--------CONTACT--------------*/
 
 .container_container {
