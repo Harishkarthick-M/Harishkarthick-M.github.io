@@ -189,7 +189,7 @@ body{
 .aboutcontent img:hover{
     border: solid 10px lightblue;
     transform: scale(1.2);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgb(0, 138, 201);
 }
 .aboutcontent p {
     display: flex;
@@ -200,13 +200,13 @@ body{
     margin:85px;
     margin-top: 8%;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 138, 201);
+    border-radius: 10px ;
     line-height: 1.6;
 }
 .aboutcontent p:hover{
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgb(0, 138, 201);
 }
 
 .about_explore {
@@ -217,11 +217,11 @@ body{
 
 .about_explore a {
     text-decoration: none;
-    color: #1d1d1d;
+    color: rgb(0, 138, 201);
 }
 
 .about_explore a:hover {
-    color: goldenrod;
+    color: lightblue;
 }
 /*-----------------------SKILLS------------------*/
 .section-title{
@@ -474,9 +474,25 @@ footer a:hover {
     color: gray;
 }
 @media(max-width:768px){
+    /* .img1{
+        display: none;
+    } */
     .skillpage {
         /* overflow-y: hidden; */
         height: max-content;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
+    /* .maincontainer{
+        background: linear-gradient(to right,#000 ,#fff);
+    }
+    .Home1{
+        display: none;
+    }
+    .icon_home{
+        display: none;
+    }
+    .Home1{
+        Hey, I'm 
+        HARISH KARTHICK M
+    } */
 }
