@@ -334,7 +334,7 @@ body{
 /*--------CONTACT--------------*/
 
 .container_container {
-    background-color: #1d1d1d;
+    background-color: #000000;
     color: white;
     height: 100vh;
     width: 100vw;
@@ -348,8 +348,10 @@ body{
 }
 
 .form_size{
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items:center;
     padding: 20px;
     margin: 10px;
@@ -361,8 +363,14 @@ body{
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 50%;
     max-width: 500px; 
+    align-items:center ;
+    margin-left: 50px;
+    /* margin-right: 50%; */
+}
+.form form{
+    width: 100%;
 }
 
 .form-group {
@@ -373,7 +381,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 15px;
     border: 2px solid #a09d9d;
     border-radius: 7px;
@@ -425,6 +433,26 @@ textarea {
 ::placeholder {
     color: #888;
 }
+
+.info{
+    width: 50%;
+    height: 250px;
+    background-color: #5f5d5d;
+    /* padding: 40px; */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    /* margin-left: 50px; */
+  }
+  .info .info-container{
+    width: 100%;
+    padding: 2rem;
+   height: 100%;
+  }
+  .info .info-container a{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: wheat;
+  }
 /*------------Project-------------*/
 
 /* #projects{
@@ -433,46 +461,139 @@ textarea {
     background-color: #f4f4f4;
 } */
 
+/*----------Scores -----------*/
+.Scores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 80%; */
+    /* max-width: 900px; */
+    /* height: 60vh; */
+    /* background-color: #fafafafa; */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 60vh;
+    width: 100vw;
+    background-color: #f4f4f4;
+  }
+  .chart-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1cccc;
+    border-radius: 15%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  .chart-section .chart {
+    position: relative;
+    width: 60%;
+    /* max-width: 200px; */
+  }
+  .chart-section svg {
+    width: 100%;
+    height: auto;
+  }
+  .chart-section .score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  .skills--section {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .skills--section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    background-color: #d1cccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 15px;
+  }
+  .legend-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .legend-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .legend-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+
+
+
+
 /*------------------- FOOTER --------------------*/
 footer {
-    height: 7vh;
+    height: auto; /* Adjust to fit content */
     width: 100vw;
     background-color: black;
     color: white;
     padding: 20px 0;
     text-align: center;
-    
 }
+
 .footer-content {
     margin: 0 auto;
 }
+
 .footer-content p {
     margin-bottom: 10px;
     font-size: 14px;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .social-icons a {
     text-decoration: none;
+    color: white; /* Ensure icons inherit white color */
+    font-size: 24px; /* Adjust size of icons */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-.social-icons a img {
-    width: 24px; 
-    height: 24px;
-    transition: transform 0.3s ease; 
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Zoom effect */
+    color: gray; /* Change color on hover */
 }
-.social-icons a:hover img {
-    transform: scale(1.2);  
-}
-footer a {
-    text-decoration: none;
-    color: white;
-}
-footer a:hover {
-    color: gray;
-}
+
 @media(max-width:768px){
     /* .img1{
         display: none;
@@ -494,5 +615,5 @@ footer a:hover {
     .Home1{
         Hey, I'm 
         HARISH KARTHICK M
-    } /*
+    } */
 }
